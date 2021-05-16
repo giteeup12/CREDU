@@ -45,6 +45,9 @@ for filenum in range(0,3):
             if numx == "EXPRESS SCRIPTS":
                 line_to_write = 'LWages & Salary\n'
                 qif_file.write(line_to_write)
+            if numx == "Trs Des Ppms":
+                line_to_write = 'LWages & Salary:Net Pay\n'
+                qif_file.write(line_to_write) 
         else:
             print('debit field')
             qt, numx, qt = debit_field.split('"')
@@ -61,9 +64,7 @@ for filenum in range(0,3):
             if numx == "PUBLIC SERVICE":
                 line_to_write = 'LUtilities:gas\n'
                 qif_file.write(line_to_write)  
-            if numx == "Trs Des Ppms":
-                line_to_write = 'Wages & Salary:Net Pay\n'
-                qif_file.write(line_to_write)  
+ 
             if numx == "Amatrula":
                 line_to_write = 'Home Improvement:gardener\n'
                 qif_file.write(line_to_write)    
