@@ -27,6 +27,7 @@ for filenum in range(0,3):
         print('credit', credit_field)
         print('check no', checkno_field)
         print('balance', balance_field)
+        
         #
 
         qif_file.write("!Type:Bank\n")
@@ -78,3 +79,4 @@ for filenum in range(0,3):
     fileobject.close()
     qif_file.close()
     print("file: {} converted\n".format(input_file_names[filenum]))
+    print("credu finished")
